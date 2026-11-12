@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ID Vault Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#5f6368; --line:#e3e3e6; --accent:#1a5fd0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121214; --fg:#ececef; --muted:#a0a0a8; --line:#2c2c31; --accent:#7aa7ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  .summary { background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:10px; padding:12px 16px; }
+</style>
+</head>
+<body>
+<main>
+<h1>ID Vault Privacy Policy</h1>
+<p class="meta">App: ID Vault (com.idvault.wallet) · Developer: AR Innovation · Last updated: 12 November 2026</p>
+
+<div class="summary">
+<p><strong>In short:</strong> ID Vault stores your documents only on your phone, encrypted. There is no account, no server, no ads and no analytics. The developer cannot see your documents. The only data that ever leaves your phone is described in "Optional bank lookup" below, and it is sent only when you tap that button.</p>
+</div>
+
+<h2>1. What ID Vault stores</h2>
+<p>You choose what to add. This may include photos and PDFs of identity documents (such as Aadhaar, PAN, driving licence, vehicle RC, ABHA, voter ID and passport), bank card details (card number, name, expiry and bank), travel tickets, vehicle insurance and PUC details, vehicle service records, and the names you give to family profiles.</p>
+<p>All of this is stored <strong>only on your device</strong>, inside the app's private storage, and encrypted with AES-256-GCM. The encryption key is kept in the Android Keystore (hardware-backed on supported phones) and cannot be exported. ID Vault never asks for or stores card CVVs, PINs or OTPs.</p>
+
+<h2>2. What is processed on your device</h2>
+<p>Text recognition, QR and barcode reading, face detection (used only to locate the holder photo on a driving-licence PDF) and document edge detection all run <strong>on your phone</strong> using Google ML Kit. Document images are not sent to Google or anyone else for this processing. ML Kit's optional usage reporting is turned off in the app.</p>
+
+<h2>3. Optional bank lookup (the only network use)</h2>
+<p>When you add a bank card, you can tap <em>Look up bank online</em>. Only then does the app send the <strong>first 8 digits</strong> of the card number (the bank identification number, which identifies the bank and not you or your account) over HTTPS to the third-party service <a href="https://binlist.net">binlist.net</a>, which returns the bank name, card type and network. No other data is sent with it. binlist.net's own privacy terms apply to that request. If you never tap the button, ID Vault makes no network requests.</p>
+
+<h2>4. Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Camera (no permission needed)</td><td>ID Vault does not request the camera permission. When you take a photo, your phone's own camera app or the Google Play services document scanner captures it and hands only that image back to ID Vault.</td></tr>
+<tr><td>Notifications</td><td>To remind you before documents, insurance or trips expire or are due. Notifications hide details on the lock screen.</td></tr>
+<tr><td>Internet</td><td>Used only by the optional bank lookup above.</td></tr>
+<tr><td>Biometrics / device lock</td><td>To unlock the vault with your fingerprint, face or phone PIN. The app never receives your biometric data; Android only tells it whether unlocking succeeded.</td></tr>
+</table>
+
+<h2>5. Sharing</h2>
+<p>ID Vault does not sell, rent or share your data with anyone. The developer does not receive your data. If you use <em>Share</em>, <em>Open with</em>, the masked-Aadhaar share or calendar export, the file goes only to the app you pick, at your request.</p>
+
+<h2>6. Backups</h2>
+<p>Android cloud backup and device-to-device transfer are turned off for ID Vault. You can create an encrypted backup file yourself. It is protected with a passphrase you choose (AES-256-GCM, PBKDF2-HMAC-SHA256 with 600,000 iterations), and you decide where to keep it. The passphrase is never stored, so a lost passphrase cannot be recovered by anyone, including the developer.</p>
+
+<h2>7. Keeping and deleting data</h2>
+<p>Your data stays on your phone until you delete it. You can delete individual documents, use <em>Erase vault now</em>, or uninstall the app. Uninstalling or resetting the phone permanently erases the vault, because the encryption key cannot leave the device. The developer holds no copy, so there is nothing to request deletion of on our side.</p>
+
+<h2>8. Security</h2>
+<p>Besides encryption, the app locks itself after 30 seconds in the background, blocks screenshots and screen recording, clears copied numbers from the clipboard after 60 seconds, and can optionally erase the vault after 10 failed unlock attempts. No method of storage is perfectly secure, so keep your phone's own screen lock enabled.</p>
+
+<h2>9. Children</h2>
+<p>ID Vault is meant for adults managing their own and their family's documents. It is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+<h2>10. Not an official app</h2>
+<p>ID Vault is an independent app. It is not affiliated with UIDAI, the Income Tax Department, MoRTH, DigiLocker, the Election Commission, NHA, or any bank or government body.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new date. If the app ever starts collecting more data, the policy and the app's Google Play data safety section will be updated before that release.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about this policy: <a href="mailto:alokr6943@gmail.com">alokr6943@gmail.com</a></p>
+</main>
+</body>
+</html>
